@@ -1,0 +1,29 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f4; color: #333; }
+.wrap { width: 90%; max-width: 800px; margin: 0 auto; }
+header { background: #333; color: #fff; padding: 18px 0; }
+header .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+header a { color: #fff; text-decoration: none; }
+header a:hover { color: #f4a261; }
+main { padding: 24px 0 60px; }
+.card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.1); padding: 20px; margin-bottom: 20px; }
+.card h2 { margin-bottom: 12px; }
+input[type=text] { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; margin-bottom: 12px; }
+.consent { display: block; margin-bottom: 12px; }
+.consent input { margin-right: 8px; }
+button { background: #f4a261; color: #222; border: none; padding: 12px 24px; border-radius: 5px; font-weight: bold; font-size: 1rem; cursor: pointer; }
+button:hover { background: #e76f51; }
+button:disabled { opacity: .5; cursor: wait; }
+a:focus, button:focus, input:focus { outline: 2px solid #f4a261; outline-offset: 2px; }
+.note, .scan-note { font-size: .9rem; color: #555; margin: 12px 0; }
+.verdict { border-radius: 8px; padding: 20px; text-align: center; color: #fff; margin-bottom: 16px; }
+.verdict.good { background: #2a9d8f; } .verdict.warn { background: #e9a23b; color: #222; } .verdict.bad { background: #c1121f; }
+.verdict .score { font-size: 2.5rem; font-weight: bold; }
+.verdict .verdict-text { font-size: 1.2rem; font-weight: bold; margin: 5px 0; }
+.verdict .verdict-counts { font-family: "Courier New", monospace; white-space: pre-wrap; }
+.scan-list { list-style: none; }
+.finding { background: #fff; border-left: 5px solid #999; padding: 10px 15px; margin-bottom: 10px; border-radius: 4px; word-break: break-word; }
+.finding.sev-high { border-left-color: #c1121f; } .finding.sev-medium { border-left-color: #f4a261; } .finding.sev-low { border-left-color: #2a9d8f; }
+.finding .fix { color: #555; font-size: .95rem; margin-top: 4px; }
+details.passed { margin: 15px 0; } details.passed summary { cursor: pointer; font-weight: bold; } details.passed li { padding: 3px 0; }
+#scan-results button { margin-top: 10px; }
