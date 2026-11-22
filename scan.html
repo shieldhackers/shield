@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; connect-src 'self' https://*.workers.dev">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Shield Website Scanner</title>
+    <link rel="stylesheet" href="scan.css">
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <h1>Shield Scanner</h1>
+            <a href="./">Back to main site</a>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <section class="card">
+            <h2>Scan a website</h2>
+            <input type="text" id="remote-url" placeholder="https://your-site.com" autofocus>
+            <label class="consent"><input type="checkbox" id="remote-consent"> I own this site or have permission to test it</label>
+            <button id="remote-btn" type="button">Scan This Website</button>
+            <p class="note">Passive check only: headers, cookies and forms. No attacks are sent.</p>
+        </section>
+        <section id="scan-results" aria-live="polite"></section>
+    </main>
+
+    <script src="scan.js"></script>
+</body>
+</html>
