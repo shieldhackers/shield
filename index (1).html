@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Shield</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="container">
+            <div class="logo">
+                <h1>Shield</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#attacks">Types of Attacks</a></li>
+                    <li><a href="#vulnerability">Vulnerability Testing</a></li>
+                    <li><a href="#detection">Detection</a></li>
+                    <li><a href="#prevention">Preventive Measures</a></li>
+                    <li><a href="#scanner">Live Scan</a></li>
+                    <li><a href="#contact" class="cta-button">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Your Go-To Solution for Web Security</h2>
+            <p>We specialize in identifying vulnerabilities and preventing web security attacks.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a team dedicated to enhancing web security by identifying vulnerabilities and mitigating attacks through thorough testing, detection, and prevention strategies.</p>
+        </div>
+    </section>
+
+    <!-- Types of Attacks Section -->
+    <section id="attacks">
+        <div class="container">
+            <h2>Types of Attacks</h2>
+            <div class="attack-list">
+                <div class="attack-item">
+                    <h3>SQL Injection</h3>
+                    <p>SQL Injection is a code injection technique that exploits a vulnerability in a website's database query execution.</p>
+                </div>
+                <div class="attack-item">
+                    <h3>Cross-Site Scripting (XSS)</h3>
+                    <p>XSS attacks allow attackers to inject malicious scripts into web pages viewed by other users, compromising their security.</p>
+                </div>
+                <div class="attack-item">
+                    <h3>Denial of Service (DoS)</h3>
+                    <p>DoS attacks flood a server with traffic, causing it to become slow or unavailable to users.</p>
+                </div>
+                <div class="attack-item">
+                    <h3>Cross-Site Request Forgery (CSRF)</h3>
+                    <p>CSRF exploits the trust that a site has in a user's browser, making unauthorized requests on behalf of the user.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vulnerability Testing Section -->
+    <section id="vulnerability">
+        <div class="container">
+            <h2>Vulnerability Testing</h2>
+            <p>We offer comprehensive vulnerability testing services that include assessing websites for potential threats like SQL injection, XSS, and others.</p>
+            <a href="#detection" class="cta-button">See How We Detect Issues</a>
+        </div>
+    </section>
+
+    <!-- Detection Section -->
+    <section id="detection">
+        <div class="container">
+            <h2>Detection</h2>
+            <p>We use advanced tools to detect security vulnerabilities, ensuring that your website is protected against the most common threats.</p>
+            <div class="detection-methods">
+                <div class="method">
+                    <h3>Automated Scanning</h3>
+                    <p>Automated tools can quickly identify known vulnerabilities, ensuring a faster detection process.</p>
+                </div>
+                <div class="method">
+                    <h3>Manual Penetration Testing</h3>
+                    <p>Our expert security team performs manual penetration testing to discover vulnerabilities that automated tools might miss.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preventive Measures Section -->
+    <section id="prevention">
+        <div class="container">
+            <h2>Preventive Measures</h2>
+            <p>We help you implement security best practices to prevent attacks from happening in the first place.</p>
+            <div class="prevention-methods">
+                <div class="method">
+                    <h3>Web Application Firewall (WAF)</h3>
+                    <p>Using WAF helps block malicious traffic and prevent attacks like SQL injections and XSS.</p>
+                </div>
+                <div class="method">
+                    <h3>Encryption</h3>
+                    <p>Encrypting sensitive data such as passwords and personal information reduces the risk of data breaches.</p>
+                </div>
+                <div class="method">
+                    <h3>Regular Updates</h3>
+                    <p>Keeping all software and libraries up to date ensures that security vulnerabilities are patched promptly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Scanner Section -->
+    <section id="scanner">
+        <div class="container">
+            <h2>Live Security Scan</h2>
+            <p>Check whether this website is safe: the scan tests its headers, forms, scripts and exposed files, then gives a score and a verdict.</p>
+            <button id="scan-btn" class="cta-button" type="button">Scan This Site</button>
+            <div id="scan-results" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul class="footer-nav">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#attacks">Types of Attacks</a></li>
+                <li><a href="#vulnerability">Vulnerability Testing</a></li>
+                <li><a href="#detection">Detection</a></li>
+                <li><a href="#prevention">Preventive Measures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <p>&copy; 2026 Shield. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scanner.js"></script>
+</body>
+</html>
